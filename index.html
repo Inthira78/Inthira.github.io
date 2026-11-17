@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F2F7F5;       /* พื้นหลังเขียวอ่อน */
+    --card:#FFFFFF;
+    --text:#26343A;
+    --muted:#5E7279;
+    --accent:#2F6F73;   /* เขียวอมฟ้า */
+    --soft:#DCEBE8;     /* ป้ายทักษะ */
+    --line:#D5E2DF;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+       font:400 17px/1.7 "Nunito","Segoe UI",system-ui,sans-serif}
+  .wrap{max-width:46rem;margin:0 auto;padding:2rem 1.25rem 4rem}
+  a{color:var(--accent)}
+  header{text-align:center;padding:2.5rem 0 1rem}
+  .avatar{width:7.5rem;height:7.5rem;border-radius:50%;object-fit:cover;
+          background:var(--soft);border:4px solid #fff;margin-bottom:1rem}
+  h1{margin:0;font-size:2.2rem;color:var(--accent)}
+  .role{color:var(--muted);font-size:1.15rem;margin:.25rem 0 1rem}
+  .links a{display:inline-block;margin:.25rem .4rem;padding:.45rem 1rem;
+           border-radius:2rem;background:var(--accent);color:#fff;
+           text-decoration:none;font-weight:600}
+  .links a:hover{opacity:.9}
+  section{background:var(--card);border:1px solid var(--line);
+          border-radius:1rem;padding:1.5rem 1.75rem;margin-top:1.25rem}
+  h2{margin:0 0 .75rem;font-size:1.3rem;color:var(--accent)}
+  h3{margin:1rem 0 .15rem;font-size:1.05rem}
+  p{margin:0 0 .6rem}
+  .small{color:var(--muted);font-size:.95rem;margin:0 0 .4rem}
+  ul{margin:.25rem 0 0;padding-left:1.2rem}
+  li{margin-bottom:.3rem}
+  .tags{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;list-style:none;margin:.25rem 0 0}
+  .tags li{background:var(--soft);border-radius:2rem;padding:.2rem .9rem;margin:0;font-size:.95rem}
+  footer{text-align:center;color:var(--muted);margin-top:2rem;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <header>
+    <!-- ใส่รูป: วางไฟล์ photo.jpg ในโฟลเดอร์เดียวกัน แล้วเปลี่ยน src เป็น "photo.jpg" -->
+    <img class="avatar" src="" alt="">
+    <h1>Inthira Lueangmarang</h1>
+    <p class="role">Data Science And Application Student </p>
+    <div class="links">
+      <a href="https://github.com/Inthira78">GitHub</a>
+      <a href="r.thirin@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About me</h2>
+    <p>I am a data science student who enjoys turning data into answers that people can use. I like checking whether a model's assumptions really hold, then explaining the result in plain language. I am looking for opportunities to build predictive models and learn from real data.</p>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <h3>Bachelor of Science, Information and Communication Technology</h3>
+    <p class="small">Major: Data Science and Application | University of Phayao | 2025-Present</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+    <p class="small">Data analysis</p>
+    <ul class="tags">
+      <li>R</li><li>Regression</li><li>Time series (ARIMA/SARIMA)</li><li>Survival analysis</li>
+    </ul>
+    <p class="small" style="margin-top:.9rem">Tools</p>
+    <ul class="tags">
+      <li>SQL</li><li>Power BI</li><li>Excel</li><li>Git and GitHub</li>
+    </ul>
+    <p class="small" style="margin-top:.9rem">Personal strengths</p>
+    <ul class="tags">
+      <li>Responsible</li><li>On time</li><li>Teamwork</li><li>Careful with data</li><li>Fast learner</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Class projects</h2>
+
+    <h3>Survival analysis: Drug X vs standard care</h3>
+    <p class="small">R, Kaplan-Meier, Log-rank test, Cox regression</p>
+    <p>Compared recurrence-free survival of 200 patients over 36 months. The log-rank test was not significant, but the curves cross at about 27 months, so the proportional hazards assumption was violated. After adjusting for age, sex, biomarker and stage, the Cox model showed Drug X lowers recurrence risk (HR = 0.55).</p>
+    
+
+    <h3>Time series forecasting (ARIMA / SARIMA)</h3>
+    <p class="small">R, tseries, forecast, Box-Jenkins</p>
+    <p>Fitted and compared ARIMA models on a 60-observation series and a seasonal model on monthly sales data, with stationarity checks, residual diagnostics and forecasts.</p>
+    
+
+    <h3>Multiple linear regression with dummy variables</h3>
+    <p class="small">R, Excel</p>
+    <p>Built and tested regression models on house prices, car fuel efficiency and CO2 emissions, and a blood-group dataset.</p>
+    
+
+    <h3>Power BI dashboards</h3>
+    <p class="small">Power BI</p>
+    <p>Three dashboards presented in class: production capacity vs actual output, COVID-19 patients by province and gender, and shop sales.</p>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section>
+    <h2>Activities</h2>
+    <ul>
+      <li></li>read a bookfiction 
+      <li></li>Play sports sometimes
+    </ul>
+  </section>
+
+  <!-- AWARDS -->
+  <section>
+    <h2>Certificates</h2>
+    <ul>
+      <li>AI FOR ALL 2026 </li>
+    </ul>
+  </section>
+
+  <!-- LANGUAGES + INTERESTS -->
+  <section>
+    <h2>Languages</h2>
+    <ul>
+      <li>Thai: Speaking, reading, and writing</li>
+      <li>English: Basic</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <p>Learning new data tools, small data-analysis side projects, music and light exercise.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="r.thirin@gmail.com">r.thirin@gmail.com</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/share/194KVDJihH/?mibextid=wwXIfr" target="_blank">https://www.facebook.com/share/194KVDJihH/?mibextid=wwXIfr</a></p>   
+    <p>Phone: <a href="tel:09572022312">095-720-2312</a></p>
+  </section>
+
+  <footer>&copy; 2026 Inthira</footer>
+</div>
+</body>
+</html>
